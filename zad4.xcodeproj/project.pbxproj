@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		84064C9521BF33EF00EC1B4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84064C9421BF33EF00EC1B4A /* main.m */; };
+		84064CAF21BF3B9200EC1B4A /* PBWIPokoj.m in Sources */ = {isa = PBXBuildFile; fileRef = 84064CA721BF3B9100EC1B4A /* PBWIPokoj.m */; };
+		84064CB021BF3B9200EC1B4A /* PBWIKrzeslo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84064CAA21BF3B9100EC1B4A /* PBWIKrzeslo.m */; };
+		84064CB121BF3B9200EC1B4A /* PBWIBiurko.m in Sources */ = {isa = PBXBuildFile; fileRef = 84064CAC21BF3B9100EC1B4A /* PBWIBiurko.m */; };
+		84064CB221BF3B9200EC1B4A /* PBWIZasob.m in Sources */ = {isa = PBXBuildFile; fileRef = 84064CAE21BF3B9100EC1B4A /* PBWIZasob.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		84064C9121BF33EF00EC1B4A /* zad4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = zad4; sourceTree = BUILT_PRODUCTS_DIR; };
 		84064C9421BF33EF00EC1B4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84064CA721BF3B9100EC1B4A /* PBWIPokoj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBWIPokoj.m; sourceTree = "<group>"; };
+		84064CA821BF3B9100EC1B4A /* PBWIBiurko.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBWIBiurko.h; sourceTree = "<group>"; };
+		84064CA921BF3B9100EC1B4A /* PBWIPokoj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBWIPokoj.h; sourceTree = "<group>"; };
+		84064CAA21BF3B9100EC1B4A /* PBWIKrzeslo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBWIKrzeslo.m; sourceTree = "<group>"; };
+		84064CAB21BF3B9100EC1B4A /* PBWIZasob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBWIZasob.h; sourceTree = "<group>"; };
+		84064CAC21BF3B9100EC1B4A /* PBWIBiurko.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBWIBiurko.m; sourceTree = "<group>"; };
+		84064CAD21BF3B9100EC1B4A /* PBWIKrzeslo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBWIKrzeslo.h; sourceTree = "<group>"; };
+		84064CAE21BF3B9100EC1B4A /* PBWIZasob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBWIZasob.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,14 @@
 		84064C9321BF33EF00EC1B4A /* zad4 */ = {
 			isa = PBXGroup;
 			children = (
+				84064CA821BF3B9100EC1B4A /* PBWIBiurko.h */,
+				84064CAC21BF3B9100EC1B4A /* PBWIBiurko.m */,
+				84064CAD21BF3B9100EC1B4A /* PBWIKrzeslo.h */,
+				84064CAA21BF3B9100EC1B4A /* PBWIKrzeslo.m */,
+				84064CA921BF3B9100EC1B4A /* PBWIPokoj.h */,
+				84064CA721BF3B9100EC1B4A /* PBWIPokoj.m */,
+				84064CAB21BF3B9100EC1B4A /* PBWIZasob.h */,
+				84064CAE21BF3B9100EC1B4A /* PBWIZasob.m */,
 				84064C9421BF33EF00EC1B4A /* main.m */,
 			);
 			path = zad4;
@@ -120,6 +140,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84064C9521BF33EF00EC1B4A /* main.m in Sources */,
+				84064CB121BF3B9200EC1B4A /* PBWIBiurko.m in Sources */,
+				84064CB021BF3B9200EC1B4A /* PBWIKrzeslo.m in Sources */,
+				84064CB221BF3B9200EC1B4A /* PBWIZasob.m in Sources */,
+				84064CAF21BF3B9200EC1B4A /* PBWIPokoj.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

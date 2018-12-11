@@ -1,17 +1,31 @@
-//
-//  main.m
-//  zad4
-//
-//  Created by Admin on 11.12.2018.
-//  Copyright © 2018 Admin. All rights reserved.
-//
-
+#import <objc/objc.h>
+#import <objc/Object.h>
 #import <Foundation/Foundation.h>
+#import "PBWIZasob.h"
+#import "PBWIBiurko.h"
+#import "PBWIKrzeslo.h"
+#import "PBWIPokoj.h"
 
-int main(int argc, const char * argv[]) {
+
+int main()
+{
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        PBWIZasob * zasob = [[PBWIZasob alloc] init];
+        [zasob setKolor: @"szary"];
+        NSLog(@"Przykladowy zasob: %@", [zasob opisZasobu]);
+        PBWIBiurko * biurko = [[PBWIBiurko alloc] initWithParams:100 :80 :140];
+        [biurko setKolor: @"brazowy"];
+        NSLog(@"Przykladowe biurko: %@", [biurko opisZasobu]);
+        PBWIKrzeslo * krzeslo = [[PBWIKrzeslo alloc] init];
+        [krzeslo setObicie: @"skora"];
+        [krzeslo setKolor: @"czarny"];
+        NSLog(@"Przykladowe krzeslo: %@", [krzeslo opisZasobu]);
+        
+        PBWIPokoj *pokoj= [[PBWIPokoj alloc] init];
+        [pokoj dodajZasob: biurko];
+        [pokoj dodajZasob: krzeslo];
+        [pokoj usunZasob: biurko];
     }
     return 0;
 }
+
