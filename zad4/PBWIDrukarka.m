@@ -19,4 +19,3 @@
 }
 
 @end
-//NSLog(@"var = %@", (var ? @"YES" : @"NO"));

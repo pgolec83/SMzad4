@@ -13,25 +13,34 @@ int main()
     @autoreleasepool {
         PBWIZasob * zasob = [[PBWIZasob alloc] init];
         [zasob setKolor: @"szary"];
-        NSLog(@"Przykladowy zasob: %@", [zasob opisZasobu]);
+
         PBWIBiurko * biurko = [[PBWIBiurko alloc] initWithParams:100 :80 :140];
         [biurko setKolor: @"brazowy"];
-        NSLog(@"Przykladowe biurko: %@", [biurko opisZasobu]);
+        PBWIBiurko * biurkoPrezesa = [[PBWIBiurko alloc] initWithParams: 200 :120: 140];
+        [biurkoPrezesa setKolor: @"czarny"];
+
         PBWIKrzeslo * krzeslo = [[PBWIKrzeslo alloc] init];
         [krzeslo setObicie: @"skora"];
         [krzeslo setKolor: @"czarny"];
-        NSLog(@"Przykladowe krzeslo: %@", [krzeslo opisZasobu]);
+
         PBWIDrukara * drukarka = [[PBWIDrukara alloc] initWithParams:@"Finanse01" :@"HPDeskJet" :true];
         [drukarka setKolor:@"szary"];
-        NSLog(@"Przykladowa drukarka: %@", [drukarka opisZasobu]);
+        
+        PBWIDrukara * drukarkaSekretarki = [[PBWIDrukara alloc] initWithParams:@"Sekretariat01" :@"HPLaserJet" :false];
         
         PBWIPokoj *pokoj= [[PBWIPokoj alloc] init];
         [pokoj dodajZasob: biurko];
         [pokoj dodajZasob: krzeslo];
-        [pokoj usunZasob: biurko];
-        //NSLog(@"Wszystkie zasoby:");
-        //NSLog(@"%@", [pokoj wszystkieZasoby]);
+        [pokoj dodajZasob: drukarka];
+        [pokoj dodajZasob: biurkoPrezesa];
+        [pokoj dodajZasob: drukarkaSekretarki];
+        
+        NSLog(@"Wszystkie zasoby:");
+        for(int i=0;i<[[pokoj wszystkieZasoby] count]; i++) {
+            NSLog(@"%@", [[[pokoj wszystkieZasoby] objectAtIndex: i] opisZasobu]);
+        }
     }
     return 0;
 }
-
+//for (i = 0; i < count; i++)
+//NSLog (@"Element %i = %@", i, [myColors objectAtIndex: i]);
