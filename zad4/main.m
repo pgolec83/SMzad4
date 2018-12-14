@@ -5,6 +5,7 @@
 #import "PBWIBiurko.h"
 #import "PBWIKrzeslo.h"
 #import "PBWIPokoj.h"
+#import "PBWIDrukarka.h"
 
 
 int main()
@@ -20,11 +21,16 @@ int main()
         [krzeslo setObicie: @"skora"];
         [krzeslo setKolor: @"czarny"];
         NSLog(@"Przykladowe krzeslo: %@", [krzeslo opisZasobu]);
+        PBWIDrukara * drukarka = [[PBWIDrukara alloc] initWithParams:@"Finanse01" :@"HPDeskJet" :true];
+        [drukarka setKolor:@"szary"];
+        NSLog(@"Przykladowa drukarka: %@", [drukarka opisZasobu]);
         
         PBWIPokoj *pokoj= [[PBWIPokoj alloc] init];
         [pokoj dodajZasob: biurko];
         [pokoj dodajZasob: krzeslo];
         [pokoj usunZasob: biurko];
+        //NSLog(@"Wszystkie zasoby:");
+        //NSLog(@"%@", [pokoj wszystkieZasoby]);
     }
     return 0;
 }
