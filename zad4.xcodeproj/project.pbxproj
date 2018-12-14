@@ -12,6 +12,7 @@
 		84064CB021BF3B9200EC1B4A /* PBWIKrzeslo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84064CAA21BF3B9100EC1B4A /* PBWIKrzeslo.m */; };
 		84064CB121BF3B9200EC1B4A /* PBWIBiurko.m in Sources */ = {isa = PBXBuildFile; fileRef = 84064CAC21BF3B9100EC1B4A /* PBWIBiurko.m */; };
 		84064CB221BF3B9200EC1B4A /* PBWIZasob.m in Sources */ = {isa = PBXBuildFile; fileRef = 84064CAE21BF3B9100EC1B4A /* PBWIZasob.m */; };
+		84BC601321C40BDB00536FCE /* PBWIZasobyWydzialu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC601221C40BDB00536FCE /* PBWIZasobyWydzialu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		84064CAC21BF3B9100EC1B4A /* PBWIBiurko.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBWIBiurko.m; sourceTree = "<group>"; };
 		84064CAD21BF3B9100EC1B4A /* PBWIKrzeslo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBWIKrzeslo.h; sourceTree = "<group>"; };
 		84064CAE21BF3B9100EC1B4A /* PBWIZasob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBWIZasob.m; sourceTree = "<group>"; };
+		84BC601221C40BDB00536FCE /* PBWIZasobyWydzialu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBWIZasobyWydzialu.m; sourceTree = "<group>"; };
+		84BC601421C40BF400536FCE /* PBWIZasobyWydzialu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBWIZasobyWydzialu.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				84064CAB21BF3B9100EC1B4A /* PBWIZasob.h */,
 				84064CAE21BF3B9100EC1B4A /* PBWIZasob.m */,
 				84064C9421BF33EF00EC1B4A /* main.m */,
+				84BC601221C40BDB00536FCE /* PBWIZasobyWydzialu.m */,
+				84BC601421C40BF400536FCE /* PBWIZasobyWydzialu.h */,
 			);
 			path = zad4;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			files = (
 				84064C9521BF33EF00EC1B4A /* main.m in Sources */,
 				84064CB121BF3B9200EC1B4A /* PBWIBiurko.m in Sources */,
+				84BC601321C40BDB00536FCE /* PBWIZasobyWydzialu.m in Sources */,
 				84064CB021BF3B9200EC1B4A /* PBWIKrzeslo.m in Sources */,
 				84064CB221BF3B9200EC1B4A /* PBWIZasob.m in Sources */,
 				84064CAF21BF3B9200EC1B4A /* PBWIPokoj.m in Sources */,
