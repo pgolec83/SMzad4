@@ -3,7 +3,7 @@
 @interface PBWIZasobyWydzialu : NSObject
 
 @property NSMutableArray * zasobyWydzialu;
-@property NSMutableArray * pokojeWydzialu;
+@property NSMutableDictionary * pokojeWydzialu;
 
 @end
 
