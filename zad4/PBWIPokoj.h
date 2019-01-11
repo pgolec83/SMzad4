@@ -1,4 +1,4 @@
-#import "PBWIPokoj.h"
+#import <Foundation/Foundation.h>
 #import "PBWIZasob.h"
 
 @interface PBWIPokoj : NSObject{

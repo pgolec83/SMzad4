@@ -1,16 +1,13 @@
 #import "PBWIZasob.h"
+#import <Foundation/Foundation.h>
 
-@interface PBWIDrukara : PBWIZasob{
-@private NSString * _nazwa;
-@private NSString * _model;
-@private bool _czyKolorowa;
+@interface PBWIDrukarka : PBWIZasob
+{
+@private NSString * _rodzaj;
 }
 
-@property(readonly) NSString * nazwa;
-@property(readonly) NSString * model;
-@property(readonly) bool czyKolorowa;
+@property(strong) NSString * rodzaj;
 
--(id) initWithParams: (NSString *)nazwa :(NSString *)model :(bool)kolorowa;
 -(NSString *) opisZasobu;
 
 @end

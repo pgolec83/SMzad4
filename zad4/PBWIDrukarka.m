@@ -1,21 +1,12 @@
 #import "PBWIDrukarka.h"
+#import "PBWIZasob.h"
 
-@implementation PBWIDrukara
-@synthesize nazwa = _nazwa;
-@synthesize model = _model;
-@synthesize czyKolorowa = _czyKolorowa;
+@implementation PBWIDrukarka
 
--(id) initWithParams:(NSString *)paramN :(NSString *)paramM :(bool)paramK{
-    self = [super init];
-    if (self) {
-        _nazwa = paramN;
-        _model = paramM;
-        _czyKolorowa = paramK;
-    }
-    return self;
-}
+@synthesize rodzaj = _rodzaj;
+
 -(NSString *) opisZasobu {
-    return [NSString stringWithFormat:@"Drukara o nazwie: %@, model: %@, druk w kolorze: %@", self.nazwa, self.model, (self.czyKolorowa ? @"TAK" : @"NIE")];
+    return [NSString stringWithFormat:@"Drukarka: %@ o kolorze: %@", _rodzaj, self.kolor];
 }
 
 @end

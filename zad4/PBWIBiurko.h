@@ -1,5 +1,5 @@
-#import "PBWIBiurko.h"
 #import "PBWIZasob.h"
+#import <Foundation/Foundation.h>
 
 @interface PBWIBiurko : PBWIZasob{
    @private int _wysokosc;
