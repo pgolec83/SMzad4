@@ -71,33 +71,46 @@
     return biurka;
 }
 
--(NSMutableArray*) wyswietlWszystkieBiurka
+-(NSMutableArray*) wyswietlWszystkieKrzesla
 {
-    NSMutableArray * biurka = [[NSMutableArray alloc] init];
+    NSMutableArray * krzesla = [[NSMutableArray alloc] init];
     PBWIZasob * z;
     for(int i=0; i<[_ArrZasobyWydzialu count]; i++)
     {
         z = _ArrZasobyWydzialu[i];
-        if([z isMemberOfClass:[PBWIBiurko class]])
+        if([z isMemberOfClass:[PBWIKrzeslo class]])
         {
-            [biurka addObject:z];
+            [krzesla addObject:z];
         }
     }
-    return biurka;
+    return krzesla;
 }
 
--(NSMutableArray*) wyswietlWszystkieBiurka
+-(NSMutableArray*) wyswietlWszystkieDrukarki
 {
-    NSMutableArray * biurka = [[NSMutableArray alloc] init];
+    NSMutableArray * drukarki = [[NSMutableArray alloc] init];
     PBWIZasob * z;
     for(int i=0; i<[_ArrZasobyWydzialu count]; i++)
     {
         z = _ArrZasobyWydzialu[i];
-        if([z isMemberOfClass:[PBWIBiurko class]])
+        if([z isMemberOfClass:[PBWIDrukarka class]])
         {
-            [biurka addObject:z];
+            [drukarki addObject:z];
         }
     }
-    return biurka;
+    return drukarki;
 }
+
+-(void) sprawdzZasobyWPokoju:(PBWIPokoj *)pokoj
+{
+    PBWIZasob * z;
+    for(z in _ArrZasobyWydzialu)
+    {
+        if(z.pokoj == pokoj)
+        {
+            NSLog(@"%@", [z description]);
+        }
+    }
+}
+
 @end
